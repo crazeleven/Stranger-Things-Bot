@@ -132,28 +132,6 @@ client.on('raw', async event => {
     }
   }
 
-  if(settings.dbinfo = true) {
-    if (event.t === "MESSAGE_REACTION_ADD") {
-                if (reaction.emoji.name === "📄" && user.id !== client.user.id) {
-                    await client.updateGuild(message.guild, { logs: false });
-                    message.channel.send(`${message.author}, Les logs sont désactivés`)
-                }
-                if (reaction.emoji.name === "🔔" && user.id !== client.user.id) {
-                    await client.updateGuild(message.guild, { news: false });
-                    message.channel.send(`${message.author}, Les actualités de ${client.user} sont désactivés`)
-                }
-    } else if (event.t === "MESSAGE_REACTION_REMOVE") {
-                if (reaction.emoji.name === "📄" && user.id !== client.user.id) {
-                    await client.updateGuild(message.guild, { logs: true });
-                    message.channel.send(`${message.author}, Les logs sont activés`)
-                }
-                if (reaction.emoji.name === "🔔" && user.id !== client.user.id) {
-                    await client.updateGuild(message.guild, { news: true });
-                    message.channel.send(`${message.author}, Les actualités de ${client.user} sont activés`)
-                }
-    }
-  }
-
     let embedFooterText;
     if (message.embeds[0]) embedFooterText = message.embeds[0].footer.text;
             const fields = message.embeds[0].fields; // des erreurs peuvent être commis par cette constante cela peut-être normale car d'autre fonctionnalités utilise les réactions mais cela n'arrête pas le bot !
