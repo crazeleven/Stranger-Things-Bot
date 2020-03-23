@@ -1,7 +1,7 @@
 {
-  "name": "discordbotjs",
-  "version": "1.6.5",
-  "description": "Un bot Discord en Javascript crée et développer par Alex Animate Mp4#2361",
+  "name": "strangerthingsbot",
+  "version": "1.0.5",
+  "description": "Un bot Discord en Javascript crée et développer par Alex Animate Mp4#2361 pour le serveur Stranger Things FR",
   "main": "main.js",
   "dependencies": {
     "canvas": "^2.6.0",
