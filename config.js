@@ -10,7 +10,7 @@ module.exports = {
   ROLEDEV: process.env.ROLEDEV,
   DEFAULTSETTINGS: {
     prefix: "st!",
-    welcomeChannel: "??accueil",
+    welcomeChannel: "🎉accueil",
     serverInvite: "Aucun",
     pictureWelcome: "https://i.imgur.com/zHZms53.png",
     pictureLeave: "https://i.imgur.com/ijHczbl.png",
