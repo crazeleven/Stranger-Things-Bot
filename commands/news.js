@@ -7,9 +7,9 @@ module.exports = {
 	usage: '[#salon, ID ou rien pour crée le salon actualités-discordbotjs]',
 	cooldown: 5,
     async execute(client, message, args, settings) {
-        const channelexistname = message.guild.channels.find(x => x.name === "actualités-discordbotjs" || "🔔actualités-discordbotjs")
+        const channelexistname = message.guild.channels.find(x => x.name === "actualités-discordbotjs" || "🔔actualités-stranger-things-bot")
         const everyoneRole = client.guilds.get(message.guild.id).roles.find(x => x.name === '@everyone');
-        const news_name = "🔔actualités-discordbotjs";
+        const news_name = "🔔actualités-stranger-things-bot";
         if(channelexistname) {
             return message.reply(`Le salon existe dejà (${channelexistname}) !`)
         } else if(!channelexistname) {
