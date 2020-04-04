@@ -6,10 +6,9 @@ module.exports = {
     init: () => {
         const mongOptions = {
             useNewUrlParser: true,
+            useUnifiedTopology: true,
             autoIndex: false,
             useFindAndModify: false,
-            reconnectTries: Number.MAX_VALUE,
-            reconnectInterval: 500,
             poolSize: 10,
             bufferMaxEntries: 0,
             connectTimeoutMS: 10000,
