@@ -3,6 +3,9 @@
   "version": "1.0.5",
   "description": "Un bot Discord en Javascript crée et développer par Alex Animate Mp4#2361 pour le serveur Stranger Things FR",
   "main": "main.js",
+  "engines": {
+    "node": "12.16.3"
+  },
   "dependencies": {
     "canvas": "^2.6.0",
     "common-tags": "^1.8.0",
